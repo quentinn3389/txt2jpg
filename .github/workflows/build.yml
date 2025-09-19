@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyinstaller pillow pyqt5
+          pip install pyinstaller pillow pyqt6
 
       - name: Build exe
         run: pyinstaller --onefile --noconsole main.py
